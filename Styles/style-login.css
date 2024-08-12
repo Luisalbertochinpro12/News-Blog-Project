@@ -3,3 +3,138 @@
     margin: 0;
     font-family: "Work Sans", sans-serif;
 }
+
+a:visited {
+    color: #017127;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: 99vh;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.back-button button {
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 5vw; /* Corregir */
+    height: 8.3vh; /* Corregir */
+    margin: 17px 0 0 20px;
+    box-shadow: 0 5px 5px gray;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.back-button button:hover {
+    background-color: #bebebe;
+}
+
+.login-container {
+    height: 84.3vh;
+    width: 48.8vw;
+    border-radius: 36px;
+    box-shadow: 0 5px 5px gray;
+    margin: 0 24.04%;
+    box-sizing: border-box;
+}
+
+.header-login {
+    height: 19%;
+    display: flex;
+    margin: 1.5vh 0 0 0;
+    padding: 1.5vh 0 1.5vh 1.1vw;
+    align-items: center;
+}
+
+.header-login h1 {
+    padding-right: 20vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-login img {
+    border-radius: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.login-container .data-container {
+    height: 34vh;
+    width: 100%;
+}
+
+.data-container textarea {
+    border-radius: 12px;
+    box-shadow: 0 4px 2px gray;
+    padding: 1.5vh 0 0 0.8vw;
+    height: 6.68vh;
+    width: 95%;
+    margin: 0 1vw;
+    box-sizing: border-box;
+    resize: none;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+.data-container p {
+    margin: 15px 0 12px 1vw;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.remember-user-container {
+    margin: 3.4vh 1vw;
+    box-sizing: border-box;
+    padding: 1vh 0;
+    justify-content: start;
+    display: flex;
+}
+
+.remember-user-container input {
+    width: 23.1px;
+    height: 23.1px;
+    background-color: #0059B1;
+    text-align: center;
+}
+
+.remember-user-container label {
+    font-weight: 200;
+    margin-left: 1vw;
+}
+
+.login-button {
+    display: block;
+    text-align: center;
+}
+
+.login-button button {
+    border-radius: 12px;
+    color: #FFFFFF;
+    width: 15.2vw;
+    height: 5.2vh;
+    margin: 5vh 0 3vh;
+    background-color: #0059B1;
+    border: none;
+    font-weight: 200;
+    transition: background-color 0.3s;
+}
+
+.login-button button:hover {
+    background-color: #003870;
+}
+
+
+.login-button a, .login-button p {
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
