@@ -4,8 +4,9 @@
     font-family: "Work Sans", sans-serif;
 }
 
+
 b {
-    color: red;
+    color: rgb(211, 16, 16);
 }
 
 a:visited {
@@ -38,7 +39,6 @@ button {
 }
 
 .main-container {
-    border: 1px solid black;
     width: 99vw;
     height: 99vh;
     display: flex;
@@ -52,6 +52,7 @@ button {
     height: 79.8vh;
     margin: 0 10.7vw;
     border-radius: 15px;
+    box-shadow: 0 5px  5px gray;
 }
 
 .singin-container .header-container {
@@ -225,6 +226,15 @@ button {
     
     .third-column {
         display: block;
+        font-size: 25px;
+    }
+
+    .data-container {
+        margin: 0 2.06vw;
+    }
+
+    .data-container p {
+        font-size: medium;
     }
 
     .main-container {
@@ -235,10 +245,72 @@ button {
     .singin-container {
         margin: 0 6.1vw;
         width: 88.7vw;
-        height: 85vh;
+        height: 90vh;
+    }
+
+    .header-container {
+        height: 59px;
+    }
+
+    #header {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #subheader {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+    #name {
+        margin: 3vh 0 0;
+    }
+
+    #description {
+        width: 82vw;
+        border-radius: 5px;
+    }
+
+    .profile-photo {
+        width: 30.3vw;
+        height: 10vh;
+    }
+
+    .aux-div .ocupations {
+        display: block;
+        width: 100%;
+        padding: 0 3vw;
+    }
+
+    .third-column input {
+        width: 83.9vw;
+        height: 3.8vh;
+        border-radius: 5px;
+    }
+
+    .profile-photo img {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #DEDEDE;
     }
 
     .aux-div {
         display: flex;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .data-container .buttons-container button {
+        width: 21vw;
+        height: 5.1vh;
+    }
+
+    .profile-photo button {
+        width: 19.7vw;
+        height: 3.2vh;
+        border-radius: 12px;
     }
 }
