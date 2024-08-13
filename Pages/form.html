@@ -10,14 +10,14 @@
     <title>News Blog</title>
 </head>
 <body>
+    <div class="back-button">
+        <button>
+            <a href="../Pages/login.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" alt="" width="50px" height="50px">
+            </a>
+        </button>
+    </div>
     <div class="main-container">
-        <div class="back-button">
-            <button>
-                <a href="../Pages/login.html">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" alt="" width="50px" height="50px">
-                </a>
-            </button>
-        </div>
         <div class="singin-container">
             <div class="header-container">
                 <p id="header">Regístrate</p>
@@ -26,42 +26,78 @@
             <div class="data-container">
                 <div class="first-column">
                     <p>Nombre(s)<b>*</b>:</p>
-                    <textarea name="name-input" id="name-input" placeholder="Ejemplo: Luis Alberto"></textarea>
+                        <input type="text" placeholder="Ejemplo: Luis Alberto">
                     <p>Correo Electrónico<b>*</b>:</p>
-                    <textarea name="emali-input" id="emali-input" placeholder="Ejemplo: luis@gmail.com"></textarea>
+                        <input type="text" placeholder="Ejemplo: luis@gmail.com">
                         <div class="profilephoto-container">
                             <div class="profile-photo">
-                                <p>Foto de perfil:</p>
-                                <img src="" alt="">
-                                <button>Subir</button>
-                                <p><b>*</b> Son los campos obligatorios</p>
+                                <h1>Foto de perfil:</h1>
+                                <div class="photo-container">
+                                    <img src="" alt="">
+                                    <button>Subir</button>
+                                </div>
+                                <p id="footer"><b>*</b> Son los campos obligatorios</p>
                             </div>
                             <div class="ocupations">
                                 <p>Ocupaciones:</p>
-                                <select name="ocupations" id="ocupations">
-                                    <option value="x">Maestro</option>
-                                    <option value="x">Doctor</option>
-                                    <option value="x">Nutriogolo</option>
-                                    <option value="x">Ingeniero en Tecnología de Software</option>
-                                    <option value="x">Cabron en todo</option>
-                                </select>
+                                    <select name="ocupations" id="ocupations">
+                                        <option value="x">Seleccione una opción</option>
+                                        <option value="x">Maestro</option>
+                                        <option value="x">Doctor</option>
+                                        <option value="x">Nutriogolo</option>
+                                        <option value="x">Ingeniero en Tecnología de Software</option>
+                                        <option value="x">Cabron en todo</option>
+                                    </select>
                             </div>
                         </div>
                 </div>
                 <div class="second-column">
                     <p>Apellido(s)<b>*</b>:</p>
-                    <textarea name="last-name-input" id="last-name" placeholder="Ejemplo: Gil Ortega"></textarea>
+                        <input type="text" placeholder="Ejemplo: Gil Ortega">
                     <p>Contraseña<b>*</b>:</p>
-                    <textarea name="password-input" id="password-input" placeholder="Ejemplo: El nombre de tu mascota"></textarea>
-                    <p id="description">Descripción:</p>
-                    <textarea name="description-input" id="description-input" placeholder="Ejemplo: Me gusta mucho los videojuegos"></textarea>
+                        <input type="text" placeholder="Ejemplo: El nombre de tu mascota">
+                    <p >Descripción:</p>
+                        <textarea name="" id="description" placeholder="Por Ejemplo: Me gustan mucho los videojuegos y la programación"></textarea>
                         <div class="buttons-container">
-                            <a href="">
-                                <button>Cancelar</button>
-                            </a>
-                            <a href="">
-                                <button>Aceptar</button>
-                            </a>
+                                <button id="acept" >Cancelar</button>
+                                <button id="cancel">Aceptar</button>
+                        </div>
+                </div>
+                <div class="third-column">
+                    <p>Nombre(s)<b>*</b>:</p>
+                        <input type="text" placeholder="Ejemplo: Luis Alberto">
+                    <p>Apellido(s)<b>*</b>:</p>
+                        <input type="text" placeholder="Ejemplo: Gil Ortega">
+                    <p>Correo Electrónico<b>*</b>:</p>
+                        <input type="text" placeholder="Ejemplo: luis@gmail.com">
+                    <p>Contraseña<b>*</b>:</p>
+                        <input type="text" placeholder="Ejemplo: El nombre de tu mascota">
+                    <p >Descripción:</p>
+                        <textarea name="" id="description" placeholder="Por Ejemplo: Me gustan mucho los videojuegos y la programación"></textarea>
+                        <div class="aux-div">
+                            <div class="profile-photo">
+                                <h1>Foto de perfil:</h1>
+                                <div class="photo-container">
+                                    <img src="" alt="">
+                                    <button>Subir</button>
+                                </div>
+                                <p id="footer"><b>*</b> Son los campos obligatorios</p>
+                            </div>
+                            <div class="ocupations">
+                                <p>Ocupaciones:</p>
+                                    <select name="ocupations" id="ocupations">
+                                        <option value="x">Seleccione una opción</option>
+                                        <option value="x">Maestro</option>
+                                        <option value="x">Doctor</option>
+                                        <option value="x">Nutriogolo</option>
+                                        <option value="x">Ingeniero en Tecnología de Software</option>
+                                        <option value="x">Cabron en todo</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="buttons-container">
+                            <button id="acept" >Cancelar</button>
+                            <button id="cancel">Aceptar</button>
                         </div>
                 </div>
             </div>

@@ -8,6 +8,14 @@ b {
     color: red;
 }
 
+a:visited {
+    color: #FFFFFF;
+}
+
+button {
+    cursor: pointer;
+}
+
 .back-button {
     display: flex;
     align-items: center;
@@ -52,38 +60,185 @@ b {
 }
 
 .header-container {
-    height: 9.06vh;
+    height: 10vh;
     background-color: #008C59;
     color: #FFFFFF;
 }
 
 #header {
-    font-size: 3vw;
+    font-size: 35px;
     font-weight: bold;
 }
 
 #subheader {
-    font-size: 1.2vw;
+    font-size: 15px;
     font-weight: 200;
 }
 
 .data-container {
     display: flex;
     margin: 3.65vh 0 0 1.47vw;
-    border: 1px solid black;
 }
 
 .first-column , .second-column {
     font-size: 3.4vh;
-    border: 1px solid black;
 }
 
 .first-column p, .second-column p {
     font-weight: 450;
-    margin: 0 0 1.63vh 0;
+    margin: 0 0 1.63vh 0.85vw;
 }
 
-.first-column textarea, .second-column textarea {
+.first-column input, .second-column input {
+    padding: 0 1vw;
     width: 34.1vw;
+    height: 5.5vh;
+    box-sizing:border-box;
+    margin: 0 2.18vw 0 0.85vw;
     border-radius: 8px;
+}
+
+.profilephoto-container {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-photo button {
+    width: 13.9vw;
+    height: 5.38vh;
+    border-radius: 16px;
+    background-color: #003366;
+    color: #FFFFFF;
+    font-size: 2vw;
+    border: none;
+    margin: 2.84vh 0 0 0;
+    transition: background-color 0.3s;
+}
+
+.profile-photo button:hover {
+    background-color: #001224;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    text-align: center;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background-color: #DEDEDE;
+}
+
+.profile-photo h1 {
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+#footer {
+    font-weight: 500;
+    font-size: 1.1vw;
+    margin: 3.7vh 0 0 2.37vw;
+}
+
+.ocupations {
+    margin: 0 0.5vw;
+}
+
+.profilephoto-container select {
+    width: 15.32vw;
+    height: 6.63vh;
+}
+
+#description {
+    height: 20.27vh;
+    align-items: start;
+    margin: 0 1vw;
+    padding: 1vh 1vw;
+    width: 33.1vw;
+    resize: none;
+}
+
+.data-container .buttons-container {
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.data-container .buttons-container button {
+    width: 13.9vw;
+    height: 5.3vh;
+    border-radius: 15px;
+    margin: 0 1vw;
+}
+
+#acept {
+    background-color: #D51A01;
+    color: #FFFFFF;
+    font-size: medium;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#cancel {
+    background-color: #00A210;
+    color: #FFFFFF;
+    font-size: medium;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#acept:hover {
+    background-color: #8a1101;
+}
+
+#cancel:hover {
+    background-color: #00640a;
+}
+
+.third-column {
+    display: none;
+}
+
+@media screen and (max-width: 780px){
+    .data-container {
+        display: block;
+    }
+
+    .first-column {
+        display: none;
+    }
+
+    .second-column {
+        display: none;
+    }
+    
+    .third-column {
+        display: block;
+    }
+
+    .main-container {
+        align-items: center;
+        height: 100vh;
+    }
+
+    .singin-container {
+        margin: 0 6.1vw;
+        width: 88.7vw;
+        height: 85vh;
+    }
+
+    .aux-div {
+        display: flex;
+    }
 }
