@@ -24,8 +24,8 @@ a:visited {
 .back-button button {
     border-radius: 50px;
     background-color: #FFFFFF;
-    width: 5vw; /* Corregir */
-    height: 8.3vh; /* Corregir */
+    width: 61px; /* Corregir */
+    height: 61px; /* Corregir */
     margin: 17px 0 0 20px;
     box-shadow: 0 5px 5px gray;
     cursor: pointer;
@@ -54,15 +54,19 @@ a:visited {
 }
 
 .header-login h1 {
-    padding-right: 20vw;
     justify-content: center;
-    text-align: center;
+    font-size: 2.8vw;
+    font-weight: 600;
+    width: 50vw;
+    padding: 0 12vw 0 0;
 }
 
 .header-login img {
     border-radius: 50%;
     height: 100%;
+    margin: 0 5.2vw 0 0;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .login-container .data-container {
@@ -70,10 +74,10 @@ a:visited {
     width: 100%;
 }
 
-.data-container textarea {
+.data-container input {
+    padding: 1.5vw;
     border-radius: 12px;
     box-shadow: 0 4px 2px gray;
-    padding: 1.5vh 0 0 0.8vw;
     height: 6.68vh;
     width: 95%;
     margin: 0 1vw;
@@ -98,7 +102,7 @@ a:visited {
     display: flex;
 }
 
-.remember-user-container input {
+#remember-user {
     width: 23.1px;
     height: 23.1px;
     background-color: #0059B1;
@@ -137,4 +141,44 @@ a:visited {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+    .login-container {
+        width: 68.4vw;
+        height: 82.2vh;
+        margin: 0 16.7vw;
+    }
 
+    .header-login h1 {
+        justify-content: center;
+        font-size: 4.8vw;
+        font-weight: 600;
+        width: 50vw;
+        padding: 0 12vw 0 0;
+    }
+    
+}
+
+@media screen and (max-width: 431px) {
+    .login-container {
+        width: 92.25vw;
+        margin: 0 4.2vw;
+    }
+
+    .header-login h1 {
+        font-size: 6.1vw;    
+    }
+    
+    .login-button button {
+        width: 29vw;
+    }
+
+    .data-container input {
+        margin: 0 4vw;
+        box-sizing: border-box;
+        width: 82.8vw;
+    }
+
+    .data-container p {
+        padding: 0 0 0 4vw;
+    }
+}

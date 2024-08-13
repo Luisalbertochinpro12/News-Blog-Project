@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>News Blog</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="back-button">
+            <button>
+                <a href="../Pages/login.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" alt="" width="50px" height="50px">
+                </a>
+            </button>
+        </div>
+        <div class="singin-container">
+            <div class="header-container">
+                <p id="header">Regístrate</p>
+                <p id="subheader">Y hazte colaborador</p>
+            </div>
+            <div class="data-container">
+                <div class="first-column">
+                    <p>Nombre(s)<b>*</b>:</p>
+                    <textarea name="name-input" id="name-input" placeholder="Ejemplo: Luis Alberto"></textarea>
+                    <p>Correo Electrónico<b>*</b>:</p>
+                    <textarea name="emali-input" id="emali-input" placeholder="Ejemplo: luis@gmail.com"></textarea>
+                        <div class="profilephoto-container">
+                            <div class="profile-photo">
+                                <p>Foto de perfil:</p>
+                                <img src="" alt="">
+                                <button>Subir</button>
+                                <p><b>*</b> Son los campos obligatorios</p>
+                            </div>
+                            <div class="ocupations">
+                                <p>Ocupaciones:</p>
+                                <select name="ocupations" id="ocupations">
+                                    <option value="x">Maestro</option>
+                                    <option value="x">Doctor</option>
+                                    <option value="x">Nutriogolo</option>
+                                    <option value="x">Ingeniero en Tecnología de Software</option>
+                                    <option value="x">Cabron en todo</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+                <div class="second-column">
+                    <p>Apellido(s)<b>*</b>:</p>
+                    <textarea name="last-name-input" id="last-name" placeholder="Ejemplo: Gil Ortega"></textarea>
+                    <p>Contraseña<b>*</b>:</p>
+                    <textarea name="password-input" id="password-input" placeholder="Ejemplo: El nombre de tu mascota"></textarea>
+                    <p id="description">Descripción:</p>
+                    <textarea name="description-input" id="description-input" placeholder="Ejemplo: Me gusta mucho los videojuegos"></textarea>
+                        <div class="buttons-container">
+                            <a href="">
+                                <button>Cancelar</button>
+                            </a>
+                            <a href="">
+                                <button>Aceptar</button>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
