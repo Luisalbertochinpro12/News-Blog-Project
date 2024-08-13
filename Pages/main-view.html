@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style-main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>News Blog</title>
     <link rel="icon" href="../Resource/Logo.jpg">
 </head>
@@ -10,25 +14,37 @@
     <div class="main-container">
         <div class="navbar-container">
             <ul>
-                <li>IMG</li>
-                <li>
+                <li class="logo">
+                    <img src="../Resource/Logo.jpg" alt="Logo del blog" width="95px" height="95px">
+                </li>
+                <li class="search-container">
                     <div class="search">
-                        <button>Lupa</button>
-                        <input type="text">
+                        <button><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Lupa" width="30px" height="30px"></button>
+                        <input type="text" placeholder="Buscar">
                     </div>
                 </li>
-                <li>Secciones</li>
-                <li>Novedades</li>
-                <li>
+                <li class="others">Secciones
+                    <button class="more">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="" width="20px" height="20px">
+                    </button>
+                </li>
+                <li class="others">Novedades
+                    <button class="more">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" alt="" width="20px" height="20px">
+                    </button>
+                </li>
+                <li class="login">
                     <a href="../Pages/login.html">
-                        <button>
+                        <button class="">
                             Iniciar Sesión
                         </button>
                     </a>
+                    <img class="user-icon" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt=""
+                        width="60px" height="60px">
                 </li>
             </ul>
         </div>
-        <div class="relevantNews-container">
+        <!--<div class="relevantNews-container">
             <h1>¡NOTICIAS RELEVANTES!</h1>
             <div class="slideImg-container">
                 <button>
@@ -134,7 +150,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </body>
 </html>
